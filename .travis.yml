@@ -2,13 +2,13 @@ language: java
 
 jdk:
   - oraclejdk7
-  - openjdk6
+#  - openjdk6
 
 notifications:
   irc: "irc.freenode.org#aerogear"
 
 before_script:
-  - git clone git@github.com:aerogear/aerogear-unified-push-server.git
+  - git clone git://github.com/aerogear/aerogear-unified-push-server.git
   - cd aerogear-push-server
 
 script: "mvn verify -Pas711-managed" 
